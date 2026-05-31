@@ -1,11 +1,11 @@
 # Expresiones Regulares
 
-## Nom i cognoms
+## Xavi Fernández Rodriguez
 
 > [!Important]
 > Introduzca a continuación su nombre y apellidos:
 >
-> Fulano Mengano Zutano
+> Xavi Fernandez Rodriguez
 
 ## Aviso Importante
 
