@@ -264,8 +264,8 @@ Inserte a continuación los códigos fuente desarrollados en esta tarea, usando 
 comandos necesarios para que se realice el realce sintáctico en Python del mismo (no
 vale insertar una imagen o una captura de pantalla, debe hacerse en formato *markdown*).
 
+### Codigo alumno.py
 ```python
-### alumno.py
 """
 Archivo : alumno.py
 Xavi Fernandez Rodriguez
@@ -352,6 +352,7 @@ if __name__ == '__main__':
     doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE)
 ```
 
+### Codigo horas.py 
 ```python
 """
 Xavi Fernandez Rodriguez
