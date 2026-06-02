@@ -27,7 +27,7 @@ def normalizaHoras(ficText, ficNorm):
         return match.group(0)
 
     texto = re.sub(
-        r'\\b(\\d{1,2}):(\\d{2})\\b',
+        r'\b(\d{1,2}):(\d{2})\b',
         formato_hhmm,
         texto
     )
@@ -48,7 +48,7 @@ def normalizaHoras(ficText, ficNorm):
         return match.group(0)
 
     texto = re.sub(
-        r'\\b(\\d{1,2})h(?:\\s*(\\d{1,2})m)?\\b',
+        r'\b(\d{1,2})h(?:\s*(\d{1,2})m)?\b',
         formato_hm,
         texto
     )
@@ -64,7 +64,7 @@ def normalizaHoras(ficText, ficNorm):
         return match.group(0)
 
     texto = re.sub(
-        r'\\b(\\d{1,2})\\s+en\\s+punto\\b',
+        r'\b(\d{1,2})\s+en\s+punto\b',
         en_punto,
         texto,
         flags=re.IGNORECASE
@@ -81,7 +81,7 @@ def normalizaHoras(ficText, ficNorm):
         return match.group(0)
 
     texto = re.sub(
-        r'\\b(\\d{1,2})\\s+y\\s+cuarto\\b',
+        r'\b(\d{1,2})\s+y\s+cuarto\b',
         y_cuarto,
         texto,
         flags=re.IGNORECASE
@@ -98,7 +98,7 @@ def normalizaHoras(ficText, ficNorm):
         return match.group(0)
 
     texto = re.sub(
-        r'\\b(\\d{1,2})\\s+y\\s+media\\b',
+        r'\b(\d{1,2})\s+y\s+media\b',
         y_media,
         texto,
         flags=re.IGNORECASE
@@ -115,7 +115,7 @@ def normalizaHoras(ficText, ficNorm):
         return match.group(0)
 
     texto = re.sub(
-        r'\\b(\\d{1,2})\\s+menos\\s+cuarto\\b',
+        r'\b(\d{1,2})\s+menos\s+cuarto\b',
         menos_cuarto,
         texto,
         flags=re.IGNORECASE
@@ -134,7 +134,7 @@ def normalizaHoras(ficText, ficNorm):
         return match.group(0)
 
     texto = re.sub(
-        r'\\b(\\d{1,2})\\s+de\\s+la\\s+mañana\\b',
+        r'\b(\d{1,2})\s+de\s+la\s+mañana\b',
         manana,
         texto,
         flags=re.IGNORECASE
@@ -153,7 +153,7 @@ def normalizaHoras(ficText, ficNorm):
         return match.group(0)
 
     texto = re.sub(
-        r'\\b(\\d{1,2})\\s+del\\s+mediod[ií]a\\b',
+        r'\b(\d{1,2})\s+del\s+mediod[ií]a\b',
         mediodia,
         texto,
         flags=re.IGNORECASE
@@ -169,7 +169,7 @@ def normalizaHoras(ficText, ficNorm):
         return match.group(0)
 
     texto = re.sub(
-        r'\\b(\\d{1,2})\\s+de\\s+la\\s+tarde\\b',
+        r'\b(\d{1,2})\s+de\s+la\s+tarde\b',
         tarde,
         texto,
         flags=re.IGNORECASE
@@ -191,7 +191,7 @@ def normalizaHoras(ficText, ficNorm):
         return match.group(0)
 
     texto = re.sub(
-        r'\\b(\\d{1,2})\\s+de\\s+la\\s+noche\\b',
+        r'\b(\d{1,2})\s+de\s+la\s+noche\b',
         noche,
         texto,
         flags=re.IGNORECASE
@@ -207,7 +207,7 @@ def normalizaHoras(ficText, ficNorm):
         return match.group(0)
 
     texto = re.sub(
-        r'\\b(\\d{1,2})\\s+de\\s+la\\s+madrugada\\b',
+        r'\b(\d{1,2})\s+de\s+la\s+madrugada\b',
         madrugada,
         texto,
         flags=re.IGNORECASE
